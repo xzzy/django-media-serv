@@ -32,7 +32,9 @@ def getMediaFile(request):
                   return HttpResponse(the_data, content_type="application/octet-stream")
               if extension == 'gpx':
                   return HttpResponse(the_data, content_type="application/gpx+xml")            
-            
+              if extension == 'docx':
+                  return HttpResponse(the_data, content_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document")                
+
               if len(extension) > 2:
                  return HttpResponse(the_data, content_type=mimetypes.types_map['.'+str(extension.lower())])
               else:
