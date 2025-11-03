@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='django_media_serv',
-      version='1.2',
+      version='1.3',
       description='Django Media Serv',
       url='https://github.com/dbca-wa/django-media-serv',
       author='Department of Biodiversity, Conservation and Attractions',
